@@ -1,0 +1,50 @@
+
+<div class="registration-page-wrapper">
+	<form class="registration-form" autocomplete="off"
+		*ngIf="registrationFrom"
+		[formGroup]="registrationFrom"
+		(ngSubmit)="submitRegistrationForm()">
+
+		<h1>
+			Sign Up
+		</h1>
+
+        <app-input
+		    [parentForm]="registrationFrom"
+			fieldName="firstName"
+			label="First Name"
+            formControlName="firstName">
+        </app-input>
+
+		<app-input
+		    [parentForm]="registrationFrom"
+			fieldName="lastName"
+			label="Last Name"
+            formControlName="lastName">
+        </app-input>
+
+		<app-input
+		    [parentForm]="registrationFrom"
+			fieldName="email"
+			label="Email"
+            formControlName="email">
+        </app-input>
+
+		<app-password-input
+		    [parentForm]="registrationFrom"
+			fieldName="password"
+			label="Password"
+            formControlName="password">
+        </app-password-input>
+
+
+		<div class="button-row" routerLink="">
+			<button class="button-success" type="submit"
+		        [disabled]="registrationFrom?.invalid">
+				Create Account
+			</button>
+		</div>
+
+		<h6>Already Have an Account ? <a routerLink="/login">Login</a></h6>
+	</form>
+</div>

@@ -1,0 +1,69 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light">
+    <!-- Container wrapper -->
+    <div class="container-fluid">
+      <!-- Toggle button -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-mdb-toggle="collapse"
+        data-mdb-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
+  
+      <!-- Collapsible wrapper -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!-- Navbar brand -->
+        <a class="navbar-brand mt-2 mt-lg-0" href="/">
+             LinkCode
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Internship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Rate us</a>
+          </li>
+        </ul>
+        <!-- Left links -->
+      </div>
+      <!-- Collapsible wrapper -->
+  
+      <!-- Right elements -->
+      <div class="d-flex align-items-center">
+        <!-- Icon -->
+        <!--a class="nav-link" href="#">
+            Sign Up 
+        </a-->
+        <!-- Avatar -->
+          <a
+            class="nav-link d-flex align-items-center hidden-arrow"
+            routerLink="/register"
+            role="button"
+          >
+          Sign Up 
+          <fa-icon [icon]="['far','user']"></fa-icon>
+          </a>
+      </div>
+      <!-- Right elements -->
+    </div>
+    <!-- Container wrapper -->
+  </nav>
+  <!-- Navbar -->

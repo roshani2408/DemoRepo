@@ -1,0 +1,15 @@
+.form-element {
+    position:auto;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    border-color: white;
+    width:250px;
+}
+
+.form-label{
+    font-family: 'Lexend';
+    font-style: normal;
+    color: rgba(0.5, 0.5, 0.5, 0.5);
+    
+}
